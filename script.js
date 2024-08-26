@@ -89,18 +89,20 @@ function updatePatientDetails(patient) {
                         data: patient.diagnosis_history.map(
                             (entry) => entry.blood_pressure.systolic.value
                         ),
-                        borderColor: "rgba(75, 192, 192, 1)",
-                        backgroundColor: "rgba(75, 192, 192, 0.2)",
+                        borderColor: "rgba(255, 99, 132, 1)",
+                        backgroundColor: "rgba(255, 99, 132, 0.2)",
                         fill: true,
+                        tension: 0.4
                     },
                     {
                         label: "Diastolic Blood Pressure",
                         data: patient.diagnosis_history.map(
                             (entry) => entry.blood_pressure.diastolic.value
                         ),
-                        borderColor: "rgba(255, 99, 132, 1)",
-                        backgroundColor: "rgba(255, 99, 132, 0.2)",
+                        borderColor: "rgba(54, 162, 235, 1)",
+                        backgroundColor: "rgba(54, 162, 235, 0.2)",
                         fill: true,
+                        tension: 0.4
                     },
                 ],
             },
@@ -109,8 +111,31 @@ function updatePatientDetails(patient) {
                 scales: {
                     y: {
                         beginAtZero: true,
+                        grid: {
+                            color: "rgba(200, 200, 200, 0.3)"
+                        }
                     },
+                    x: {
+                        grid: {
+                            color: "rgba(200, 200, 200, 0.3)"
+                        }
+                    }
                 },
+                plugins: {
+                    legend: {
+                        position: 'top',
+                        labels: {
+                            color: '#333'
+                        }
+                    },
+                    tooltip: {
+                        backgroundColor: 'rgba(0, 0, 0, 0.7)',
+                        titleColor: '#fff',
+                        bodyColor: '#fff',
+                        borderColor: 'rgba(0, 0, 0, 0.7)',
+                        borderWidth: 1
+                    }
+                }
             },
         });
 
