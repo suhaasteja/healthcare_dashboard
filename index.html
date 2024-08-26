@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Patient Dashboard</title>
+    <link rel="stylesheet" href="./styles.css" />
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script> <!-- Load Chart.js -->
+</head>
+<body>
+    <nav class="box">
+        <div class="nav-item">
+            <img src="./assets/TestLogo.svg" id="logo" />
+        </div>
+        <div class="nav-content">
+            <div class="nav-item">Overview</div>
+            <div class="nav-item">Patients</div>
+            <div class="nav-item">Schedule</div>
+            <div class="nav-item">Message</div>
+            <div class="nav-item">Transactions</div>
+        </div>
+        <div class="nav-item">profile</div>
+    </nav>
+
+    <div class="grid-container">
+        <section class="box" id="patients">Patients</section>
+        <section class="box" id="history">
+            <h3 class="box-heading">Diagnosis History</h3>
+            <canvas id="historyChart"></canvas>
+        </section>
+        <section class="box" id="list">List</section>
+        <section class="box" id="profile">Profile</section>
+        <section class="box" id="results">Results</section>
+    </div>
+    
+
+    <script src="script.js" async defer></script>
+</body>
+</html>
