@@ -2,7 +2,13 @@
 
 This project is a **Patient Dashboard** web application that dynamically fetches and displays patient data from an external API. The dashboard is designed for healthcare use, showcasing patient profiles, diagnosis history, diagnostic lists, and lab results in an interactive and visually engaging format. The app is built using HTML, CSS, JavaScript, and Chart.js for rendering charts.
 
+Live Demo - https://suhaasteja.github.io/healthcare_dashboard/
+
 ---
+
+
+![Patient Dashboard](./assets/sc.png)
+
 
 ## Features
 
@@ -55,10 +61,6 @@ This project is a **Patient Dashboard** web application that dynamically fetches
    - Their diagnosis history and health indicators are displayed in the **History** section.
    - Diagnostic and lab results are displayed in the respective sections.
 4. The application uses Chart.js to display a line chart for blood pressure trends.
-
----
-
-![Patient Dashboard](./assets/sc.png)
 
 ---
 
